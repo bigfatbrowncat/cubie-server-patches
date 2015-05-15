@@ -74,7 +74,7 @@ $defaultXStartup
        "xsetroot -solid grey\n".
        "vncconfig -iconic &\n".
        "/etc/X11/Xsession\n".
-       "vncserver -kill $DISPLAY\n");
+       "vncserver -kill \$DISPLAY\n");
 
 $xauthorityFile = "$ENV{XAUTHORITY}";
 
